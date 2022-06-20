@@ -1,0 +1,18 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIA4FO7NSPY7W2TZRWW
+      secretKey: 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
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} %-5level --- [%thread] %logger{35} : %msg %n'
